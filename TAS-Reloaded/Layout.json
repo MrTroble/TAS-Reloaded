@@ -1,11 +1,33 @@
 {
     "layout": [
         {
-            "type": "home",
-            "number": "212-333-1111"
+            "bankx": "0",
+            "banky": "0",
+            "size": "2"
         },{
-            "type": "fax",
-            "number": "646-444-2222"
+            "bankx": "1",
+            "banky": "0",
+            "size": "3"
+        },{
+            "bankx": "0",
+            "banky": "1",
+            "size": "4"
+        },{
+            "bankx": "1",
+            "banky": "1",
+            "size": "3"
+        },{
+            "bankx": "0",
+            "banky": "2",
+            "size": "4"
+        },{
+            "bankx": "1",
+            "banky": "2",
+            "size": "3"
+        },{
+            "bankx": "1",
+            "banky": "3",
+            "size": "3"
         }
     ]
 }

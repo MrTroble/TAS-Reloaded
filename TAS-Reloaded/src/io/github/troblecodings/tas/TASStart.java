@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import javafx.application.Application;
@@ -32,7 +33,11 @@ public class TASStart extends Application{
 		stage.setScene(scene);
 		stage.centerOnScreen();
 		
-		
+		JSONArray array = layout.getJSONArray("layout");
+		array.forEach(obj -> {
+			JSONObject jobj = (JSONObject)obj;
+			new Bank(pane, jobj);
+		});
 		
 		stage.show();
 	}
