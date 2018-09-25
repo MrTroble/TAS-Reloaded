@@ -13,7 +13,7 @@ public class Bank extends GridPane{
 
 	public Bank(GridPane root, JSONObject obj) {
 		root.add(this, obj.getInt("bankx"), obj.getInt("banky"));
-		this.setBackground(new Background(new BackgroundFill(Color.BLACK, new CornerRadii(5), new Insets(0))));
+		this.setBackground(new Background(new BackgroundFill(Color.GRAY, new CornerRadii(5), new Insets(0))));
 		for(int i = 0;i < obj.getInt("size");i++) {
 			Seat seat = new Seat("None");
 			this.add(seat, i, 0);
